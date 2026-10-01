@@ -7,50 +7,59 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="main">
-            <h1>Laviero's Portfolio</h1>
-            <div class="bio">
-                I am a 4th year student at the University of California at Irvine, working to earn a B.S. in Computer Science
+        <div id="header">
+            <div id="logo_section">
+                <h1>Laviero Mancinelli</h1>
             </div>
-            <h2>These are some things I've done:</h2>
+        </div>
+        <div class="main">
+            <div class="about">
+                <img class="photo" src="IMG_E9373.JPG"></img>
+                <div class="about-text">Hi! My name is Laviero Mancinelli and I am a newgrad from the University of California, Irvine with a B.S. in Computer Science.</div>
+            </div>
+            <div class="spacer-100"></div>
+            <div class="hor-line"></div>
+            <div class="spacer-50"></div>
+            <h2>Some things I have made...</h2>
             <div class="tiles">
+                <div class="item">
+                    <div class="item-content">
+                        <img src="slam.gif" />
+                        <div class="para">
+                            <h3>ESP32 SLAM Robot</h3>
+                            <p>Robot that uses a ToF sensor's 180° scans to perform simultaenous localization and mapping
+                                (SLAM), path planning around a map it creates dynamically to explore an indoor space. The SLAM
+                                algorithm is based on ICP matching, and the path planner uses A* on a coarse occupancy grid 
+                                 to step towards the head of a dynamic goal stack.
+                            </p>
+                            <a href="https://github.com/LavieroMancinelli/esp32-slam-robot">Github</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="item">
                     <div class="item-content">
                         <img src="doom.gif" />
                         <div class="para">
-                            <h3>DOOM Rasterization</h3>
-                            <p>A recreation of the original DOOM (1993), rendered in the terminal
-                                using a rasterization approach based on BSP tree BVH and Bresenham's 
-                                algorithm applied to projected points. </p>
-                        </div>
+                            <h3>Terminal DOOM Engine</h3>
+                            <p>First person 3D game based on DOOM (1993) that runs in the Windows terminal. 
+                            Pipeline based on polygon transformation, implemented from scratch in C++ using no external graphics api. 
+                            Occlusion is handled using a BSP tree to construct an efficient visibility order. </p>
                             <a href="https://github.com/LavieroMancinelli/doom.git">Github</a>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <div class="item-content">
-                        <img src="harmony.png" />
-                        <div class="para">
-                            <h3>Harmony (WIP)</h3>
-                            <p>A real-time messaging full stack application inspired by 
-                                Discord. Built on a stack consisting of Next.js, Node.js, 
-                                prisma, and socket.io.</p>
                         </div>
-                            <a href="https://github.com/LavieroMancinelli/harmony">Github</a>
                     </div>
                 </div>
-                
-
                 <div class="item">
                     <div class="item-content">
                         <img src="lazyreader.gif" />
                         <div class="para">
                             <h3>Lazyreader</h3>
-                            <p>A simple web app that makes digital reading more convenient and efficient, 
-                                improving on existing speed-reading apps with a scrolling text design.</p>
-                        </div>
+                            <p>A simple utilitarian tool to make digital reading faster and reduce eyestrain 
+                                by emulating the scanning motion of the reader's eyes at a consistent speed, 
+                                reducing one point of focus to divert more attention toward the material.
+                            </p>
                             <a href="https://lavieromancinelli.github.io/lazyreader/">Link</a>
                             <a href="https://github.com/LavieroMancinelli/lazyreader">Github</a>
+                        </div>
                     </div>
                 </div>
             </div>
